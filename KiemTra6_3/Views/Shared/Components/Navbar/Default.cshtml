@@ -1,0 +1,8 @@
+﻿@model IEnumerable<THangSx>
+
+<ul id="topMenu" class="nav pull-right">
+	@foreach (var item in Model)
+	{
+	<li class=""><a asp-controller="Home" asp-action="SanPhamTheoLoai" asp-route-maloai="@item.MaHangSx">@item.HangSx</a></li>
+	}
+</ul>
